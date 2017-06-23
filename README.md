@@ -55,6 +55,7 @@ Setup
 4. Manually install the [IRremoteESP8266 library](https://github.com/markszabo/IRremoteESP8266)
 5. Load the `IRController.ino` blueprint from this repository
 6. Upload blueprint to your ESP8266. Monitor via serial at 115200 baud rate
+> If you get an espcomm_upload_mem error you have selected the wrong board.
 7. Device will boot into WiFi access point mode initially with SSID `IRBlaster Configuration`, IP address `192.168.4.1`. Connect to this and configure your access point settings using WiFi Manager
 8. Forward whichever port your ESP8266 web server is running on so that it can be accessed from outside your local network
 9. If your router supports mDNS/Bonjour you can now access your device on your local network via the hostname you specified (`http://hostname.local:port/`)
