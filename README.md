@@ -29,12 +29,11 @@ Supported Signals
 
 Hardware
 --------------
-V2 of the hardware includes the 2N2222 transistor for increased current and pulls directly off the USB port via the VIN pin (5V supply) to increase the overall current delivery to the IR LED to improve brightness and range. Appropriate current limiting resistors are also shown. V1 hardware still works with the new code but V2 is recommended for better performance and prolonged lifespan of your ESP8266 and LED.
 
 ![irblaster](https://cloud.githubusercontent.com/assets/3608298/21850706/e52be61e-d7d9-11e6-8939-9e43d533ae8d.png)
 
 - [ESP8266 NodeMCU Board](https://www.amazon.com/gp/product/B01IK9GEQG/)
-- [IR Receiver](https://www.amazon.com/gp/product/B00EFOQEUM/)
+- IR Receiver TSOP38238
 - [Super bright IR Led](https://www.amazon.com/gp/product/B00ULB0U44/)
 - [2N2222 Transistor](https://www.amazon.com/gp/product/B00R1M3DA4/)
 - [Resistors](https://www.amazon.com/gp/product/B00YX75O5M/)
@@ -55,7 +54,7 @@ Setup
 4. Manually install the [IRremoteESP8266 library](https://github.com/markszabo/IRremoteESP8266)
 5. Load the `IRController.ino` blueprint from this repository
 6. Upload blueprint to your ESP8266. Monitor via serial at 115200 baud rate
-> If you get an espcomm_upload_mem error you have selected the wrong board.
+> If you get an espcomm_upload_mem error you have selected the wrong board or upload speed.
 7. Device will boot into WiFi access point mode initially with SSID `IRBlaster Configuration`, IP address `192.168.4.1`. Connect to this and configure your access point settings using WiFi Manager
 8. Forward whichever port your ESP8266 web server is running on so that it can be accessed from outside your local network
 9. If your router supports mDNS/Bonjour you can now access your device on your local network via the hostname you specified (`http://hostname.local:port/`)
