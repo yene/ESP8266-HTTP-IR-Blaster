@@ -33,7 +33,7 @@ Hardware
 ![irblaster](https://cloud.githubusercontent.com/assets/3608298/21850706/e52be61e-d7d9-11e6-8939-9e43d533ae8d.png)
 
 - [ESP8266 NodeMCU Board](https://www.amazon.com/gp/product/B01IK9GEQG/)
-- IR Receiver TSOP38238
+- IRR+ = IR Receiver TSOP38238 (or the bit worse VS1838B)
 - [Super bright IR Led](https://www.amazon.com/gp/product/B00ULB0U44/)
 - [2N2222 Transistor](https://www.amazon.com/gp/product/B00R1M3DA4/)
 - [Resistors](https://www.amazon.com/gp/product/B00YX75O5M/)
