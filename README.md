@@ -2,7 +2,7 @@
 
 ESP8266 Compatible IR Blaster that accepts HTTP commands for use with services like Amazon Echo
 
-![img_0706](https://cloud.githubusercontent.com/assets/3608298/21854472/e2b3d824-d7e8-11e6-8439-a500b73fd57e.jpg)
+![irblaster](image.jpg)
 
 Supported Signals
 --------------
@@ -11,7 +11,7 @@ NEC, Sony, Panasonic, JVC, Samsung, Sharp, Coolix, Dish, Wynter, Roomba, RC5/RC6
 Hardware
 --------------
 
-![irblaster](image.jpg)
+![wiring](wiring.png)
 
 - [ESP8266 NodeMCU Board](https://www.amazon.com/gp/product/B01IK9GEQG/)
 - [2N2222 Transistor](https://www.amazon.com/gp/product/B00R1M3DA4/)
