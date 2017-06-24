@@ -4,8 +4,6 @@ ESP8266 Compatible IR Blaster that accepts HTTP commands for use with services l
 
 ![img_0706](https://cloud.githubusercontent.com/assets/3608298/21854472/e2b3d824-d7e8-11e6-8439-a500b73fd57e.jpg)
 
-The purpose of this project was to create a Wi-Fi enabled IR blaster that could be controlled with Amazon Alexa and IFTTT.
-
 Supported Signals
 --------------
 NEC, Sony, Panasonic, JVC, Samsung, Sharp, Coolix, Dish, Wynter, Roomba, RC5/RC6, RAW
