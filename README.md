@@ -1,44 +1,26 @@
-# ESP8266-HTTP-IR-Blaster V2
+# ESP8266-HTTP-IR-Blaster
 
 ESP8266 Compatible IR Blaster that accepts HTTP commands for use with services like Amazon Echo
 
 ![img_0706](https://cloud.githubusercontent.com/assets/3608298/21854472/e2b3d824-d7e8-11e6-8439-a500b73fd57e.jpg)
 
-The purpose of this project was to create a Wi-Fi enabled IR blaster that could be controlled with Amazon Alexa and IFTTT
-This program uses the ESP8266 board and the ESP8266Basic firmware to achieve these goals with minimal coding overhead
-
-Version 2 of the project aims to increase the reliability and expand the functionality to include many different types of devices
- in addition to transmitting RAW formatted codes and more complex combination of codes
-
-Bonjour service configured on port 80
+The purpose of this project was to create a Wi-Fi enabled IR blaster that could be controlled with Amazon Alexa and IFTTT.
 
 Supported Signals
 --------------
-- NEC
-- Sony
-- Panasonic
-- JVC
-- Samsung
-- Sharp
-- Coolix
-- Dish
-- Wynter
-- Roomba
-- RC5/RC6
-- RAW
+NEC, Sony, Panasonic, JVC, Samsung, Sharp, Coolix, Dish, Wynter, Roomba, RC5/RC6, RAW
 
 Hardware
 --------------
 
-![irblaster](https://cloud.githubusercontent.com/assets/3608298/21850706/e52be61e-d7d9-11e6-8939-9e43d533ae8d.png)
+![irblaster](image.jpg)
 
 - [ESP8266 NodeMCU Board](https://www.amazon.com/gp/product/B01IK9GEQG/)
-- IRR+ = IR Receiver TSOP38238 (or the bit worse VS1838B)
-- [Super bright IR Led](https://www.amazon.com/gp/product/B00ULB0U44/)
 - [2N2222 Transistor](https://www.amazon.com/gp/product/B00R1M3DA4/)
-- [Resistors](https://www.amazon.com/gp/product/B00YX75O5M/)
-
-*These are just quick Amazon references. Parts can likely be purchased cheaper elsewhere*
+- IRR1 = IR Receiver TSOP38238 (or the bit worse VS1838B)
+- R1 = [Resistors](https://www.amazon.com/gp/product/B00YX75O5M/)
+- R2 = [Resistors](https://www.amazon.com/gp/product/B00YX75O5M/)
+- L1 = [Super bright IR Led](https://www.amazon.com/gp/product/B00ULB0U44/)
 
 Drivers
 --------------
@@ -54,10 +36,11 @@ Setup
 4. Manually install the [IRremoteESP8266 library](https://github.com/markszabo/IRremoteESP8266)
 5. Load the `IRController.ino` blueprint from this repository
 6. Upload blueprint to your ESP8266. Monitor via serial at 115200 baud rate
-> If you get an espcomm_upload_mem error you have selected the wrong board or upload speed.
+> If you get an espcomm_upload_mem error you have selected the wrong board or wrong upload speed.
 7. Device will boot into WiFi access point mode initially with SSID `IRBlaster Configuration`, IP address `192.168.4.1`. Connect to this and configure your access point settings using WiFi Manager
-8. Forward whichever port your ESP8266 web server is running on so that it can be accessed from outside your local network
-9. If your router supports mDNS/Bonjour you can now access your device on your local network via the hostname you specified (`http://hostname.local:port/`)
+8. If your router supports mDNS/Bonjour you can now access your device on your local network via the hostname you specified (`http://hostname.local:port/`)
+> If you cannot find your device look in the routers IP table.
+9. Forward whichever port your ESP8266 web server is running on so that it can be accessed from outside your local network
 10. Create an [IFTTT trigger](https://cloud.githubusercontent.com/assets/3608298/21918439/526b6ba0-d91f-11e6-9ef2-dcc8e41f7637.png) using the Maker channel using the URL format below. Make sure you use your external IP address and not your local IP address or local hostname
 
 Server Info
