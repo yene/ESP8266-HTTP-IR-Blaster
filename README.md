@@ -21,6 +21,8 @@ Hardware
 
 > Resistor values depend on your IR LED, use http://ledcalc.com/ to calculate your resistors. [issue 12](https://github.com/mdhiggins/ESP8266-HTTP-IR-Blaster/issues/12)
 
+> If you can send IR codes but your device does not recognize them, check that your transistor is connected correctly.
+
 Drivers
 --------------
 Install the NodeMCU drivers for your respective operating system if they are not autodetected
