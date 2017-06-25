@@ -19,7 +19,7 @@ Hardware
 - R1,R2 = Resistors
 - L1 = IR LED
 
-> Resistor values depend on your IR LED, use http://ledcalc.com/ to calculate your resistors.
+> Resistor values depend on your IR LED, use http://ledcalc.com/ to calculate your resistors. [issue 12](https://github.com/mdhiggins/ESP8266-HTTP-IR-Blaster/issues/12)
 
 Drivers
 --------------
