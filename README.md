@@ -16,9 +16,11 @@ Hardware
 - [ESP8266 NodeMCU Board](https://www.amazon.com/gp/product/B01IK9GEQG/)
 - [2N2222 Transistor](https://www.amazon.com/gp/product/B00R1M3DA4/)
 - IRR1 = IR Receiver TSOP38238 (or the bit worse VS1838B)
-- R1 = [Resistors](https://www.amazon.com/gp/product/B00YX75O5M/)
-- R2 = [Resistors](https://www.amazon.com/gp/product/B00YX75O5M/)
+- R1 = [Resistors](https://www.amazon.com/gp/product/B00YX75O5M/) 220Ω
+- R2 = [Resistors](https://www.amazon.com/gp/product/B00YX75O5M/) 1kΩ
 - L1 = [Super bright IR Led](https://www.amazon.com/gp/product/B00ULB0U44/)
+
+> Resistor values depend on your IR LED, use http://ledcalc.com/ to calculate your resistors.
 
 Drivers
 --------------
