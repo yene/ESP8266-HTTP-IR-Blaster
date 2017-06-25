@@ -16,7 +16,8 @@ Hardware
 - ESP8266 NodeMCU Board
 - 2N2222 Transistor
 - IRR1 = IR Receiver TSOP38238 (or the bit worse VS1838B)
-- R1,R2 = Resistors
+- R1 = Resistor (I use 1k Ω)
+- R2 = Resistor (I use 33 Ω)
 - L1 = IR LED
 
 > Resistor values depend on your IR LED, use http://ledcalc.com/ to calculate your resistors. [issue 12](https://github.com/mdhiggins/ESP8266-HTTP-IR-Blaster/issues/12)
